@@ -15,7 +15,7 @@ body{
   font-family: Roboto,sans-serif;
 }
 main{
-  height:100vh;
+  min-height:100vh;
   background-color: #d7e3fa;
   padding-top: 2rem;
 }
@@ -81,12 +81,13 @@ section{
 #job{
   text-transform: uppercase;
   color:#537fdf;
-  font-size: 14px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 #info{
   color:var(--textColor);
   line-height: 1.5rem;
+  font-size: 14px;
   text-align:justify;
   margin-top:10px;
   margin-bottom:1rem;
@@ -117,4 +118,46 @@ section{
 }
 .prev-btn:hover,.next-btn:hover,.surprise-btn:hover{
   color:darkblue;
+}
+@media screen and (max-width: 600px){
+
+  main{
+    padding:3px;
+  }
+  #title{
+    font-size: 1rem;
+  }
+  .line{
+    width:50px;
+    height:3px;
+  }
+  .person-details{
+    margin-top: 5px;
+    padding-top:2px;
+  }
+  #info,.surprise-btn{
+    margin-bottom:5px;
+    margin-top: 3px;
+  }
+  #author,#job{
+    font-size: 14px;
+  }
+  #info{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:992px){
+  #author,#job{
+    font-size: 1.5rem;
+  }
+  #title{
+    font-size: 2.5rem;
+  }
+  #info{
+    font-size: 1.2rem;
+  }
+  .surprise-btn{
+    font-size: 1rem;
+  }
 }
