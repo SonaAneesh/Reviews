@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+:root{
+  --titleColor:#333030;
+  --lineColor:#04489b;
+  --buttonColor:#266ef3;
+  --textColor:#6d6868;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Roboto,sans-serif;
+}
+main{
+  height:100vh;
+  background-color: #d7e3fa;
+  padding-top: 2rem;
+}
+section{
+  max-width: 50%;
+  height: auto;
+  padding:2rem;
+  margin:0 auto;
+  text-align: center; 
+}
+#title{
+  color:var(--titleColor);
+  letter-spacing:1px ;
+  font-size: 2rem;
+  margin-bottom:5px;
+}
+.line{
+  width:100px;
+  height:4px;
+  background: var(--lineColor);
+  margin:0 auto;
+}
+.person-details{
+  margin-top:2rem;
+  width:100%;
+  background-color:#fff;
+  padding:8px 15px;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.15s;
+}
+.person-details:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.img-container{
+  position: relative;
+  margin-top:2rem;
+}
+#img{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border-top: 4px solid #266ef3;
+  border-right: 4px solid #266ef3;
+}
+.fa-quote-right{
+  position: absolute;
+  top:20px;
+  background-color: #266ef3;
+  color:white;
+  width:25px;
+  height:25px;
+  border-radius: 12px;
+  padding:5px
+}
+#author,#job{
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: Roboto;
+  letter-spacing: 1px;
+}
+#job{
+  text-transform: uppercase;
+  color:#537fdf;
+  font-size: 14px;
+  font-weight: bold;
+}
+#info{
+  color:var(--textColor);
+  line-height: 1.5rem;
+  text-align:justify;
+  margin-top:10px;
+  margin-bottom:1rem;
+}
+.prev-btn,.next-btn{
+  border: none;
+  color:#537fdf;
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.prev-btn{
+  margin-right: 20px;
+}
+.surprise-btn{
+  margin-top:1rem;
+  margin-bottom:1rem;
+  padding:3px 8px;
+  border: 1.6px solid #537fdf;
+  border-radius: 5px;
+  color:#266ef3;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.prev-btn:hover,.next-btn:hover,.surprise-btn:hover{
+  color:darkblue;
+}
